@@ -39,12 +39,12 @@
                <ul class="slides">
                   <li>
                      <div class="background-img zoom">
-                        <img src="img/17.jpg" alt="">
+                        <img class="lazy" src="img/17.jpg" alt="">
                      </div>
                   </li>
                   <li>
                      <div class="background-img zoom">
-                        <img src="img/15.jpg" alt="">
+                        <img class="lazy" src="img/15.jpg" alt="">
                      </div>
                   </li>
                </ul>
@@ -116,12 +116,12 @@
                   <div class="col-md-5 col-sm-5 ">
                      <div class="block-img mb-10">
                         <div class="background-img">
-                           <img src="img/221.jpg" alt="">
+                           <img class="lazy" src="img/221.jpg" alt="">
                         </div>
                      </div>
                      <div class="block-img ">
                         <div class="background-img">
-                           <img src="img/222.jpg" alt="">
+                           <img class="lazy" src="img/222.jpg" alt="">
                         </div>
                      </div>
                   </div>
@@ -145,7 +145,7 @@
          <!--Short reservation section-->
          <section class="short-reservation pt-200 pb-250 overlay">
             <div class="background-img zoom" >
-               <img src="img/223.jpg" alt="">
+               <img class="lazy" src="img/223.jpg" alt="">
             </div>
             <!--Container-->
             <div class="container">
@@ -1029,7 +1029,7 @@
          <!--Review section-->
          <section class="review pt-120 pb-120 overlay">
             <div class="background-img zoom" >
-               <img src="img/224.jpg" alt="">
+               <img class="lazy" src="img/224.jpg" alt="">
             </div>
             <!--Container-->
             <div class="container">
@@ -1106,7 +1106,7 @@
                   <div class="col-md-4  pd-0 block-special">
                      <div class="block-img special">
                         <div class="background-img">
-                           <img src="img/331.jpg" alt="">
+                           <img class="lazy" src="img/331.jpg" alt="">
                         </div>
                      </div>
                      <div class="block-content special sp-1">
@@ -1119,7 +1119,7 @@
                   <div class="col-md-4  pd-0 block-special active ">
                      <div class="block-img special">
                         <div class="background-img">
-                           <img src="img/332.jpg" alt="">
+                           <img class="lazy" src="img/332.jpg" alt="">
                         </div>
                      </div>
                      <div class="block-content special sp-2">
@@ -1131,7 +1131,7 @@
                   <div class="col-md-4  pd-0 block-special">
                      <div class="block-img special">
                         <div class="background-img">
-                           <img src="img/333.jpg" alt="">
+                           <img class="lazy" src="img/333.jpg" alt="">
                         </div>
                      </div>
                      <div class="block-content special sp-3">
@@ -1252,17 +1252,17 @@
                <ul class="slides">
                   <li>
                      <div class="background-img zoom">
-                        <img src="img/334.jpg" alt="">
+                        <img class="lazy" src="img/334.jpg" alt="">
                      </div>
                   </li>
                   <li>
                      <div class="background-img zoom">
-                        <img src="img/332.jpg" alt="">
+                        <img class="lazy" src="img/332.jpg" alt="">
                      </div>
                   </li>
                   <li>
                      <div class="background-img zoom">
-                        <img src="img/333.jpg" alt="">
+                        <img class="lazy" src="img/333.jpg" alt="">
                      </div>
                   </li>
                </ul>
@@ -1315,12 +1315,18 @@
       </div>
       <!-- End wrapper-->
       <!--Javascript-->
+	  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js"></script>
       <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
       <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
       <script src="js/smooth-scroll.js" type="text/javascript"></script>
 	  <script src="js/jquery.validate.min.js" type="text/javascript"></script>
 	  <script src="js/placeholders.min.js" type="text/javascript"></script>
       <script src="js/script.js" type="text/javascript"></script>
+	  <script>
+		var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+	  </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBt0OSpvoLYz-yXTLJihXdGjvvJt9qOs&callback=initializeMap"></script>
       <!-- Google analytics -->
       <!-- End google analytics -->
