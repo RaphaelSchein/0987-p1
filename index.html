@@ -102,47 +102,27 @@
          <!--Resto section-->
          <section id="resto" class="resto pt-120 pb-120">
             <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12 text-center mb-100">
-                     <h1 class="title">Die Pizzeria</h1>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
+
             <!--End container-->
             <!--Container-->
             <div class="container">
                <!--Row-->
                <div class="row vertical-align">
-                  <div class="col-md-5 col-sm-5 ">
-                     <div class="block-img mb-10">
-                        <div class="background-img">
-                           <img class="lazy" src="img/221.jpg" alt="">
-                        </div>
-                     </div>
-                     <div class="block-img ">
-                        <div class="background-img">
-                           <img class="lazy" src="img/222.jpg" alt="">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1  ">
+
+                  <div class="col-md-10 col-sm-10 ">
                      <div class="block-content">
-                        <h2 class="title-medium mb-10 pb-10">
+                        <h2 style="text-align: center; font-size: xx-large; font-weight: lighter" class="title-large mb-10 pb-10">
                            Liebe Gäste,
-                           <span class="dots"></span>
                         </h2>
-                        <h4 class="title-small">Mein Name ist Enzo Rapana und zusammen mit meiner Familie besitze ich die Pizzeria „La Locanda“ in Roßtal.</h4>
-                        <p><br>
+                        <h4 style="text-align: center; font-size: large; font-weight: lighter" class="title-small">Mein Name ist Enzo Rapana und zusammen mit meiner Familie besitze ich die Pizzeria „La Locanda“ in Roßtal.</h4>
+                        <p style="text-align: center; font-size: large; font-weight: normal"><br>
 
                            Seit über 20 Jahren arbeite ich in der italienischen Gastronomie und nach so vielen Jahren habe ich entschieden, mich selbstständig zu machen.<br>
                            Bei uns warten auf Sie nicht nur leckere Italienische Gerichte, sondern auch ein freundliches italienisches Personal, welches täglich alles frisch und voller Liebe für Sie zubereitet.
                            <br>Ob Pizza, Focaccia, Pasta oder leckere Desserts, bei uns finden sie einen großen Teil der  vielfältigen italienischen Küche.<br>
                            Schauen Sie sich doch einfach unsere Speisekarte an und kommen Sie uns gerne besuchen!
-
-                           Wir freuen uns auf Sie!
+<br><br>
+                           Wir freuen uns auf Sie! <br>
                            Enzo Rapana und Familie</p>
                         <br><br>
                         </div>
@@ -163,7 +143,7 @@
                <!--Row-->
                <div class="row">
                   <div class="col-sm-12 text-center front-p">
-                     <h1 class="large">Kontakt</h1>
+                     <h1 class="large" style="font-family: 'Petit Formal Script', cursive;">Kontakt</h1>
                      <p class="lead white top">Momentan: $STATUS$ </p>
                      <a href="#reservation" class="but scroll">Konktieren Sie uns</a>
                   </div>
@@ -180,7 +160,7 @@
                <!--Row-->
                <div class="row">
                   <div class="col-sm-12  mb-100 text-center">
-                     <h1 class="title">Speisekarte</h1>
+                     <h1 class="title" style="font-family: 'Petit Formal Script', cursive;">Speisekarte</h1>
                      <p class="beige">Leckere Vielfalt</p>
                   </div>
                </div>
@@ -1064,8 +1044,7 @@
                <!--Row-->
                <div class="row">
                   <div class="col-sm-8 col-sm-offset-2 text-center mb-100">
-                     <h1 class="title">Communication</h1>
-                         <p class="title-lead  mt-20">Contact US<br>
+                     <h1 class="title" style="font-family: 'Petit Formal Script', cursive;">Kontakt</h1>
                      </p>
                   </div>
                </div>
@@ -1150,7 +1129,7 @@
          <!--Contact section-->
          <section id="contact" class="contact pt-250 pb-250">
             <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
-            <h2 class="indent">Contact</h2>
+            <h2 class="indent" style="font-family: 'Petit Formal Script', cursive;">Contact</h2>
             <div class="block-map ">
                <div id="map" class="map"></div>
             </div>
@@ -1180,7 +1159,7 @@
                   </div>
                   <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7">
                      <footer class="footer-short mt-40">
-                        <p>	&copy; 2018 all rights reserved - a product created by RaphaelScheinkoenig.xyz </p>
+                        <p>	&copy; 2018 all rights reserved</p>
                      </footer>
                   </div>
                </div>
@@ -1203,6 +1182,7 @@
 		var myLazyLoad = new LazyLoad({
     elements_selector: ".lazy"
 });
+	myLazyLoad.load();
 	  </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBt0OSpvoLYz-yXTLJihXdGjvvJt9qOs&callback=initializeMap"></script>
       <!-- Google analytics -->
