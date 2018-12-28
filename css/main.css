@@ -150,16 +150,16 @@ section.single-hero {
     position: absolute;
     background: rgba(41, 41, 41, .5);
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353031+0,353031+100&0.5+0,0+100 */
-    
+
     background: -moz-linear-gradient(top, rgba(41, 41, 41, .5) 60%, rgba(41, 41, 41, 0) 100%);
     /* FF3.6-15 */
-    
+
     background: -webkit-linear-gradient(top, rgba(41, 41, 41, .5) 60%, rgba(41, 41, 41, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    
+
     background: linear-gradient(to bottom, rgba(41, 41, 41, .5) 60%, rgba(41, 41, 41, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
+
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80353031', endColorstr='#00353031', GradientType=0);
     width: 100%;
     height: 100%;
@@ -636,7 +636,7 @@ input.error {
         -webkit-border-radius: 0;
     }
     h1.large {
-        font-size: 110px;
+        font-size: 140px;
     }
     .header .left-part,
     .header .right-part {
