@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lazyload" level="application" />
+    <orderEntry type="library" name="jquery.lazy.plugins" level="application" />
   </component>
 </module>

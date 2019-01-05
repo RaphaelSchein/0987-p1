@@ -8,7 +8,7 @@
         // Site loader
 
         $(".loader-inner").fadeOut();
-        $(".loader").delay(200).fadeOut("slow");
+        $(".loader").delay(100).fadeOut("slow");
 
     });
 
@@ -55,27 +55,81 @@
 
 
     // Slider
+    $(window).load(function() {
+        $('.slider').flexslider({
+            animation: "fade",
+            slideshow: true,
+            directionNav: true,
+            controlNav: false,
+            pauseOnAction: false,
+            animationSpeed: 500,
+            start: function (slider) { // Fires when the slider loads the first slide
+                var slide_count = slider.count - 1;
 
-    $('.slider').flexslider({
-        animation: "fade",
-        slideshow: true,
-        directionNav: true,
-        controlNav: false,
-        pauseOnAction: false,
-        animationSpeed: 500
+                $(slider)
+                    .find('img.lazy:eq(0)')
+                    .each(function () {
+                        var src = $(this).attr('data-src');
+                        $(this).attr('src', src).removeAttr('data-src');
+                    });
+            },
+            before: function (slider) { // Fires asynchronously with each slider animation
+                var slides = slider.slides,
+                    index = slider.animatingTo,
+                    $slide = $(slides[index]),
+                    $img = $slide.find('img[data-src]'),
+                    current = index,
+                    nxt_slide = current + 1,
+                    prev_slide = current - 1;
+
+                $slide
+                    .parent()
+                    .find('img.lazy:eq(' + current + '), img.lazy:eq(' + prev_slide + '), img.lazy:eq(' + nxt_slide + ')')
+                    .each(function () {
+                        var src = $(this).attr('data-src');
+                        $(this).attr('src', src).removeAttr('data-src');
+                    });
+            }
+        });
+
+
+        $('.review-slider').flexslider({
+            animation: "slide",
+            slideshow: true,
+            directionNav: true,
+            controlNav: false,
+            pauseOnAction: false,
+            animationSpeed: 500,
+            start: function (slider) { // Fires when the slider loads the first slide
+                var slide_count = slider.count - 1;
+                console.log("started");
+                $(slider)
+                    .find('img.lazy:eq(0)')
+                    .each(function () {
+                        var src = $(this).attr('data-src');
+                        $(this).attr('src', src).removeAttr('data-src');
+                    });
+            },
+            before: function (slider) { // Fires asynchronously with each slider animation
+                var slides = slider.slides,
+                    index = slider.animatingTo,
+                    $slide = $(slides[index]),
+                    $img = $slide.find('img[data-src]'),
+                    current = index,
+                    nxt_slide = current + 1,
+                    prev_slide = current - 1;
+
+                $slide
+                    .parent()
+                    .find('img.lazy:eq(' + current + '), img.lazy:eq(' + prev_slide + '), img.lazy:eq(' + nxt_slide + ')')
+                    .each(function () {
+                        var src = $(this).attr('data-src');
+                        $(this).attr('src', src).removeAttr('data-src');
+                    });
+            }
+        });
+
     });
-
-
-    $('.review-slider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        directionNav: true,
-        controlNav: false,
-        pauseOnAction: false,
-        animationSpeed: 500
-    });
-
-
 
     // Mobile menu
 

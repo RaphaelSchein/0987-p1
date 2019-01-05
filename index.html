@@ -40,12 +40,12 @@
                <ul class="slides">
                   <li>
                      <div class="background-img zoom">
-                        <img class="lazy" src="img/bc1.png" alt="">
+                        <img src="img/15-1.jpg" alt="">
                      </div>
                   </li>
                   <li>
                      <div class="background-img zoom">
-                        <img class="lazy" src="img/bc1.png" alt="">
+                        <img class="lazy" src="img/17-1.jpg" alt="">t
                      </div>
                   </li>
                </ul>
@@ -134,7 +134,7 @@
          <!--End resto section-->
          <!--Short reservation section-->
          <section class="short-reservation pt-200 pb-250 overlay">
-            <div class="background-img zoom" >
+            <div class="background-img zoom lazy" >
                <img class="lazy" src="img/223-1.jpg" alt="">
             </div>
             <!--Container-->
@@ -1078,7 +1078,7 @@
          <!--End menu section-->
          <!--Review section-->
          <section class="review pt-120 pb-120 overlay">
-            <div class="background-img zoom" >
+            <div class="background-img lazy zoom" >
                <img class="lazy" src="img/224-1.jpg" alt="">
             </div>
             <!--Container-->
@@ -1167,7 +1167,7 @@
                <ul class="slides">
                   <li>
                      <div class="background-img zoom">
-                        <img class="lazy" src="img/334-1.jpg" alt="">
+                        <img src="img/334-1.jpg" alt="">
                      </div>
                   </li>
                   <li>
@@ -1230,20 +1230,20 @@
       </div>
       <!-- End wrapper-->
       <!--Javascript-->
-	  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js"></script>
-      <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
-      <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-      <script src="js/smooth-scroll.js" type="text/javascript"></script>
-	  <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	  <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js"></script>
+      <script   src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+      <script  async src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+      <script  src="js/smooth-scroll.js" type="text/javascript"></script>
+	  <script async src="js/jquery.validate.min.js" type="text/javascript"></script>
 	  <script src="js/placeholders.min.js" type="text/javascript"></script>
       <script src="js/script.js" type="text/javascript"></script>
-	  <script>
-		var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy"
-});
-	myLazyLoad.load();
-	  </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBt0OSpvoLYz-yXTLJihXdGjvvJt9qOs&callback=initializeMap"></script>
+      <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuBt0OSpvoLYz-yXTLJihXdGjvvJt9qOs&callback=initializeMap"></script>
+      <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+      <script>
+         $(function() {
+            $('.lazy').lazy();
+         });
+      </script>
       <!-- Google analytics -->
       <!-- End google analytics -->
    </body>
